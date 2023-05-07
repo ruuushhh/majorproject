@@ -24,6 +24,10 @@
                     <ul class="mb-3">
                         <li class="logo d-none d-xl-block d-lg-block"></li>
                         <li><a href="/" class="active nav-content-bttn open-font" data-tab="chats"><i class="feather-tv mr-3"></i><span>Home</span></a></li>
+                        <li><a href="/skillcheck" class="nav-content-bttn open-font" data-tab="favorites"><i
+                                    class="feather-globe mr-3"></i><span>Skill-Check</span></a></li>
+                        <li><a href="/jobsearch" class="nav-content-bttn open-font" data-tab="favorites"><i
+                                    class="feather-globe mr-3"></i><span>Jobs</span></a></li>
                         <li><a href="/projects" class="nav-content-bttn open-font" data-tab="favorites"><i class="feather-globe mr-3"></i><span>Projects</span></a></li>
 
                         <li><a href="/friends" class="nav-content-bttn open-font" data-tab="friends"><i class="feather-shopping-bag mr-3"></i><span>Friends</span></a></li>
@@ -52,19 +56,23 @@
                             <div class="card rounded-xxl p-lg--5 border-0 bg-no-repeat bg-image-contain banner-wrap" style="background-image: url('/static/images/fogg-clip.png');">
                                 <div class="card-body p-4">
                                     <h2 class="display3-size fw-400 display2-md-size sm-mt-7 sm-pt-10">Claim <b class="d-lg-block">your skill right now!!</b></h2>    
+                                    <form action="/skillcheck" method="post">
                                     <div class="form-group mt-lg-4 p-3 border-light border p-2 bg-white rounded-lg ">
                                         <div class="row">
                                             <div class="col-md-9">
                                                 <div class="form-group icon-input mb-0">
                                                     <i class="ti-search font-xs text-grey-400"></i>
-                                                    <input type="text" class="style1-input bg-transparent border-0 pl-5 font-xsss mb-0 text-grey-500 fw-500 " style="width: 100%;" placeholder="Search...">
+                                                    
+                                                    <input type="text" name="skill" class="style1-input bg-transparent border-0 pl-5 font-xsss mb-0 text-grey-500 fw-500 " style="width: 100%;" placeholder="Search...">
+                                                    
                                                 </div>
                                             </div>
                                             <div class="col-md-3">
-                                                <a href="search.html" class="w-100 d-block btn bg-current text-white font-xssss fw-600 ls-3 style1-input p-0 border-0 text-uppercase ">Search</a>
+                                                <button type="submit" class="w-100 d-block btn bg-current text-white font-xssss fw-600 ls-3 style1-input p-0 border-0 text-uppercase ">Search</a>
                                             </div>
                                         </div>
                                     </div>
+                                </form>
                                     <h4 class="text-grey-500 font-xssss fw-500 ml-1 lh-24"> <b class="text-grey-800 text-dark">Popular Search :</b> Python, Web Development, Machine Learning </h4>
                                 </div>
                             </div>

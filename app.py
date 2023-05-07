@@ -4,6 +4,7 @@ from utils import *
 from views.projects.views import projects_
 from views.authentication.views import authentication_
 from views.settings.views import settings_
+from views.skillCheck.views import skillCheck_
 from views.friends.views import friends_
 from views.jobsandinternships.views import jobsandinternships_
 ###############################################################
@@ -23,6 +24,7 @@ COOKIE_TIME_OUT = 60*5
 app.register_blueprint(projects_)
 app.register_blueprint(authentication_)
 app.register_blueprint(settings_)
+app.register_blueprint(skillCheck_)
 app.register_blueprint(friends_)
 app.register_blueprint(jobsandinternships_)
 #################################################################
